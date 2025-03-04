@@ -2,6 +2,7 @@
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { useCart } from './cartcontext'
+import Image from 'next/image';
 
 interface CartProps {
     show: boolean;
@@ -46,7 +47,7 @@ export default function Cart({ show, setShow }:CartProps) {
                         {cart.map((item,index) => (
                           <li key={index} className="flex py-6">
                             <div className="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
-                              <img alt="{item.imageAlt} "src={item.image} className="size-full object-cover" />
+                              <Image alt="{item.imageAlt} "src={item.image} className="size-full object-cover" />
                             </div>
 
                             <div className="ml-4 flex flex-1 flex-col">

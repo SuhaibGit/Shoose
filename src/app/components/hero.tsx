@@ -1,7 +1,6 @@
 import React from 'react'
 import { TbTruckDelivery } from "react-icons/tb";
 import { IoIosCall } from "react-icons/io";
-import Listing from './listing';
 
 const Hero = () => {
   return (
